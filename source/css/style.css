@@ -137,3 +137,62 @@ footer {
     transform: scale(-3);
   }
 }
+
+/* Float */
+
+.float-container {
+  padding-bottom: 150px;
+}
+
+.float-box1 {
+  float: left;
+}
+.float-box2 {
+  float: right;
+}
+
+.position-container .box1 {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  margin: auto;
+}
+
+.position-container .box2 {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 100px;
+  left: 100px;
+}
+
+.position-container .box3 {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 75px;
+  left: 75px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 400px;
+}
+
+.flex-item {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  margin: 10px;
+}
+
+/* Box Model */
+.box-example {
+  width: 300px;
+  height: 200px;
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid black;
+}
