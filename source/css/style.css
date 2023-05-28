@@ -5,17 +5,6 @@
   padding: 10px;
 }
 
-@media (width < 800px) {
-  .main {
-    width: 100%;
-    background-color: #ddd;
-  }
-  nav ul {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
 nav {
   background-color: #f2f2f2;
   margin-bottom: 100px;
@@ -288,4 +277,15 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   background-color: #45a049;
+}
+
+@media (width < 800px) {
+  .main {
+    width: 100%;
+    background-color: #ddd;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+  }
 }
