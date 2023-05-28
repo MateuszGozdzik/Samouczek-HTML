@@ -1,13 +1,25 @@
 .main {
-  width: 80%;
+  width: 960px;
   margin: auto;
   background-color: #f9f9f9;
   padding: 10px;
 }
 
+@media (width < 1000px) {
+  .main {
+    width: 100%;
+    background-color: #ddd;
+  }
+}
+
 nav {
   background-color: #f2f2f2;
   margin-bottom: 100px;
+}
+
+footer a {
+  color: black;
+  text-decoration: none;
 }
 
 nav ul {
@@ -205,4 +217,27 @@ footer {
   background-color: #f1f1f1;
   padding: 20px;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive */
+.responsive-example {
+  display: grid;
+}
+
+@media (width <= 960px) {
+  .responsive-example {
+    grid-template-columns: auto;
+  }
+}
+
+@media (960px < width < 1200px) {
+  .responsive-example {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media (width >= 1200px) {
+  .responsive-example {
+    grid-template-columns: auto auto auto;
+  }
 }
