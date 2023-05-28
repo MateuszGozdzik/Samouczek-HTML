@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/inputs.css">
+  <title>Formularze | Samouczek HTML</title>
+</head>
+
+<body>
+  <div class="main">
+    <header>
+      <nav>
+        <ul>
+          <li><a href="../../index.html">Strona Główna</a></li>
+          <li><a href="playground.html">Plac Zabaw</a></li>
+          <li><a href="grid.html">Grid</a></li>
+          <li><a href="animations.html">Animacje</a></li>
+          <li><a href="float.html">Float</a></li>
+          <li><a href="position.html">Pozycja</a></li>
+          <li><a href="flexbox.html">Flexbox</a></li>
+          <li><a href="box-model.html">Model Pudełkowy</a></li>
+          <li><a href="shadows.html">Cienie</a></li>
+          <li><a href="responsive.html">Responsywność</a></li>
+          <li><a href="lists.html">Listy</a></li>
+          <li><a href="tables.html">Tabele</a></li>
+          <li><a href="forms.html">Formularze</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Formularze</h1>
+      <p>
+        Formularze są nieodłącznym elementem stron internetowych, które pozwalają użytkownikom wprowadzać i wysyłać dane.
+        W HTML istnieje wiele rodzajów pól formularza, takich jak pola tekstowe, pola wyboru, pola wyboru wielokrotnego,
+        pola wyboru daty itp.
+      </p>
+      <p>
+        Do tworzenia formularzy w HTML używamy elementu <code>&lt;form&gt;</code> oraz różnych typów pól formularza,
+        takich jak <code>&lt;input&gt;</code>, <code>&lt;select&gt;</code>, <code>&lt;textarea&gt;</code>, itp.
+      </p>
+
+      <h2>Przykład</h2>
+      <p>
+        Poniżej znajduje się przykład prostego formularza z polami tekstowymi i przyciskiem do wysyłania:
+      </p>
+
+      <form action="mailto:fk4n1qa2@duck.com">
+        <label for="name">Temat:</label>
+        <input type="text" id="name" name="subject" required>
+        <b <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="message">Wiadomość:</label>
+          <textarea name="body" rows="4" required></textarea>
+
+          <input type="submit" value="Wyślij">
+      </form>
+    </main>
+
+    <footer>&copy; <a href="https://mateuszgozdzik.github.io/TinDog/">Mateusz Goździk</a> </footer>
+  </div>
+</body>
+
+</html>
