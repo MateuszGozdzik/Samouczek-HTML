@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/style.css">
-  <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
-  <title>Float | Samouczek HTML</title>
+  <link rel="stylesheet" href="../css/tables.css">
+  <title>Tabele | Samouczek HTML</title>
 </head>
 
 <body>
@@ -28,24 +28,41 @@
           <li><a href="tables.html">Tabele</a></li>
         </ul>
       </nav>
-
     </header>
     <main>
-      <h1>Float</h1>
+      <h1>Tabele</h1>
       <p>
-        Właściwość CSS float pozwala na przesunięcie elementu do lewej lub prawej strony i umieszczenie kolejnych elementów
-        obok niego.
+        Tabele są używane do prezentacji danych w uporządkowanej siatce. Mogą zawierać wiersze i kolumny, a każde
+        pole tabeli może zawierać dane.
       </p>
       <p>
-        Przez zastosowanie właściwości float, elementy na stronie mogą zawijać się wokół przesuniętego elementu.
+        W HTML tworzenie tabel odbywa się za pomocą elementów <code>&lt;table&gt;</code>, <code>&lt;tr&gt;</code> i
+        <code>&lt;td&gt;</code>. Element <code>&lt;table&gt;</code> definiuje całą tabelę, <code>&lt;tr&gt;</code>
+        definiuje wiersze, a <code>&lt;td&gt;</code> definiuje komórki danych.
       </p>
+
+      <h2>Przykład</h2>
       <p>
-        W poniższym przykładzie zastosowano float, aby przesunąć dwa elementy obok siebie.
+        Poniżej znajduje się prosty przykład tabeli z danymi:
       </p>
-      <div class="float-container">
-        <div class="float-box1 box box1"></div>
-        <div class="float-box2 box box2"></div>
-      </div>
+
+      <table>
+        <tr>
+          <th>Imię</th>
+          <th>Nazwisko</th>
+          <th>Wiek</th>
+        </tr>
+        <tr>
+          <td>Jan</td>
+          <td>Kowalski</td>
+          <td>35</td>
+        </tr>
+        <tr>
+          <td>Anna</td>
+          <td>Nowak</td>
+          <td>28</td>
+        </tr>
+      </table>
     </main>
 
     <footer>&copy; <a href="https://mateuszgozdzik.github.io/TinDog/">Mateusz Goździk</a> </footer>
