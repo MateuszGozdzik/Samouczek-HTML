@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/style.css">
-  <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
-  <title>Box Model | Samouczek HTML</title>
+  <link rel="stylesheet" href="../css/lists.css">
+  <title>Listy | Samouczek HTML</title>
 </head>
 
 <body>
@@ -24,33 +24,43 @@
           <li><a href="box-model.html">Model Pudełkowy</a></li>
           <li><a href="shadows.html">Cienie</a></li>
           <li><a href="responsive.html">Responsywność</a></li>
+          <li><a href="lists.html">Listy</a></li>
         </ul>
       </nav>
-
     </header>
     <main>
-      <h1>Model Pudełkowy</h1>
+      <h1>Listy</h1>
       <p>
-        Model Pudełkowy (Box Model) to podstawowy koncept CSS, który opisuje sposób renderowania i układu elementów HTML.
-        Każdy element na stronie internetowej jest traktowany jako pudełko, które składa się z zawartości (content), marginesów
-        (margins), wewnętrznych paddingów (padding) i obramowania (border).
+        Listy są ważnym elementem w tworzeniu struktury tekstu na stronach internetowych. W HTML istnieją dwa rodzaje
+        list: lista uporządkowana i lista nieuporządkowana.
       </p>
       <p>
-        Zrozumienie Modelu Pudełkowego jest kluczowe dla precyzyjnego kontrolowania układu i rozmiaru elementów na stronie
-        za pomocą CSS.
+        Lista uporządkowana (<code>&lt;ol&gt;</code>) to lista, w której elementy są numerowane lub uporządkowane w
+        określonej kolejności.
       </p>
       <p>
-        Model Pudełkowy można kontrolować za pomocą różnych właściwości CSS, takich jak <code>width</code>,
-        <code>height</code>, <code>padding</code>, <code>margin</code> i <code>border</code>.
+        Lista nieuporządkowana (<code>&lt;ul&gt;</code>) to lista, w której elementy nie mają określonej kolejności i są
+        zazwyczaj oznaczone przy użyciu kropek lub innych symboli.
       </p>
 
-      <h2>Przykład</h2>
+      <h2>Przykłady</h2>
       <p>
-        Poniżej znajduje się prosty przykład pokazujący zastosowanie Modelu Pudełkowego do elementu div.
+        Poniżej znajdują się przykłady obu rodzajów list.
       </p>
-      <div class="box-example">
-        Ten tekst znajduje się wewnątrz elementu div.
-      </div>
+
+      <h3>Lista uporządkowana:</h3>
+      <ol>
+        <li>Pierwszy element</li>
+        <li>Drugi element</li>
+        <li>Trzeci element</li>
+      </ol>
+
+      <h3>Lista nieuporządkowana:</h3>
+      <ul>
+        <li>Pierwszy element</li>
+        <li>Drugi element</li>
+        <li>Trzeci element</li>
+      </ul>
     </main>
 
     <footer>&copy; <a href="https://mateuszgozdzik.github.io/TinDog/">Mateusz Goździk</a> </footer>
