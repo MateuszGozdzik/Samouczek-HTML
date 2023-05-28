@@ -1,6 +1,8 @@
 .main {
   width: 80%;
   margin: auto;
+  background-color: #f9f9f9;
+  padding: 10px;
 }
 
 nav {
@@ -12,7 +14,6 @@ nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
   text-align: center;
 }
 
@@ -42,15 +43,20 @@ h1 {
   margin: auto;
 }
 
+footer {
+  text-align: center;
+}
+
 /* PLAGROUND */
 .style-block {
   display: block;
   margin-bottom: 100px;
   background-color: #333;
   color: white;
+  min-height: 200px;
 }
 
-.boxes {
+.playground .boxes {
   background-color: #f2f2f2;
   display: flex;
   justify-content: center;
@@ -75,4 +81,59 @@ h1 {
 }
 .box3 {
   background-color: blue;
+}
+
+/* GRID */
+
+.grid {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.grid .box {
+  width: 90%;
+  height: 100px;
+  border: 1px solid black;
+  margin: 2px;
+  text-align: center;
+  color: white;
+}
+
+/* Animations */
+
+.animowany-kontener {
+  display: flex;
+  width: 500px;
+  height: 500px;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: bisque;
+  margin: auto;
+}
+.animowany-box {
+  animation: rotate 4s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animowany-box2 {
+  animation: scale 4s linear infinite;
+}
+
+@keyframes scale {
+  from {
+    transform: scale(3);
+  }
+
+  to {
+    transform: scale(-3);
+  }
 }
