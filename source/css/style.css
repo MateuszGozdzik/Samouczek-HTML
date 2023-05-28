@@ -5,10 +5,18 @@
   padding: 10px;
 }
 
-@media (width < 1000px) {
+@media (width < 800px) {
   .main {
     width: 100%;
     background-color: #ddd;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav li {
+    margin-bottom: 10px;
   }
 }
 
