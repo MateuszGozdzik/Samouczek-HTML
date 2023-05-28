@@ -289,3 +289,8 @@ input[type="submit"]:hover {
     flex-direction: column;
   }
 }
+
+.box4 {
+  background-image: url(https://drive.google.com/uc?id=1Fu2UPHKwt0Kh8bO7ZgCsBhVt7g2FQ30Z);
+  background-size: contain;
+}
